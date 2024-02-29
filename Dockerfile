@@ -5,5 +5,6 @@ RUN mkdir -p /home/mongodb/.ssh
 RUN chown -R mongodb:mongodb /home/mongodb
 RUN chmod 0700 /home/mongodb
 RUN chmod 0700 /home/mongodb/.ssh
+USER mongodb
 ENV HOME=/home/mongodb
 
